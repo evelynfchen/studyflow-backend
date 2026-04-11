@@ -19,3 +19,13 @@ This repository showcases the backend components I implemented in the StudyFlow 
 - Django
 - PostgreSQL
 - REST APIs
+
+## 🔍 Key Backend Logic (views.py)
+
+This file demonstrates:
+
+- User-specific data isolation using `request.user`
+- Input validation and duplicate prevention
+- CRUD operations for category management
+- Sorting using database functions (`Lower`)
+- Access control using Django decorators (`@login_required`)
