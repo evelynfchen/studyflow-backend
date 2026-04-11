@@ -1,31 +1,40 @@
 # StudyFlow Backend Components
 
-This repository showcases the backend components I implemented in the StudyFlow project, a multi-user task management web application.
+This repository highlights the backend components I implemented in the StudyFlow project, a multi-user task management web application built with Django.
 
-## 🚀 What I Built
-- Designed and implemented RESTful APIs using Django
-- Developed database models using Django ORM (PostgreSQL)
-- Implemented core business logic for task and category management
-- Enabled asynchronous updates using AJAX
+## What this repository showcases
 
-## 🧠 What I Learned
-- Backend system design in a team-based project
-- API design and request/response lifecycle
-- Relational database modelling and data integrity
-- Writing clean, modular, and maintainable code
+The focus of this repository is on backend logic and data modelling, especially:
 
-## 🛠 Tech Stack
+- `core/models.py` — Django ORM models for task and category management
+- `core/views.py` — request handling, validation, CRUD logic, and user-specific data access
+
+## Key backend responsibilities
+
+- Designed relational data models using Django ORM
+- Implemented backend request handling for category management
+- Added validation logic to prevent empty or duplicate category names
+- Scoped data access by authenticated user
+- Supported sorting and CRUD operations for multi-user task management
+
+## Technical highlights
+
+- Django ORM model design
+- REST-style backend logic
+- Request validation and error handling
+- Authentication-aware data filtering
+- Modular backend structure
+
+## Tech stack
+
 - Python
 - Django
 - PostgreSQL
 - REST APIs
+- Git / GitHub
 
-## 🔍 Key Backend Logic (views.py)
+## Original team project
 
-This file demonstrates:
-
-- User-specific data isolation using `request.user`
-- Input validation and duplicate prevention
-- CRUD operations for category management
-- Sorting using database functions (`Lower`)
-- Access control using Django decorators (`@login_required`)
+This repository is a personal showcase of selected backend components I implemented.  
+Full team project repository:  
+[StudyFlow team repository](https://github.com/itech-groupBR/tech-group-project)
