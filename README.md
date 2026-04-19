@@ -1,14 +1,54 @@
-# StudyFlow Backend Components
+# StudyFlow Backend (Django)
 
-This repository presents selected backend components I implemented in the StudyFlow project — a multi-user task management web application built with Django.
+---
 
-The focus is on backend system design, data modelling, and request handling.
+## Overview
+
+A backend system for a multi-user task management application, built with Django and PostgreSQL, focusing on data modelling, request handling, and user-specific data isolation.
+
+This repository showcases my individual backend contributions, including API logic, validation, and database design.
+
+---
+
+## Example API Flow
+
+Create Category:
+```http
+POST /categories/
+Content-Type: application/json
+
+{
+
+  "name": "Work"
+
+}
+```
+Response:
+```JSON
+{
+
+  "id": 1,
+
+  "name": "Work"
+
+}
+```
+
+---
+
+## Design Decisions
+
+- Enforced user-specific uniqueness to prevent data conflicts in multi-user environments  
+
+- Structured validation logic to ensure consistent backend behaviour  
+
+- Used modular architecture (models / views / urls) to improve maintainability and scalability
+
+- Applied separation of concerns to isolate data models, request handling, and routing logic 
 
 ---
 
 ## What this repository demonstrates
-
-This repository highlights my contributions to:
 
 - Designing backend data models using Django ORM
 - Implementing request handling and business logic for category management
